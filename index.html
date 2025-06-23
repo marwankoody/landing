@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilloth - Forme ton avenir digital</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts: Poppins & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- ======== HEADER ======== -->
+    <header id="header" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Skill<span class="text-primary-blue">oth</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Comment ça marche ?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Formations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Notre promesse</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="nav-link me-3 d-none d-lg-block">Se connecter</a>
+                    <a href="#courses" class="btn btn-primary">Voir les parcours</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ======== HERO SECTION ======== -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <span class="slogan">FORME TON AVENIR DIGITAL AVEC SKILLOTH.</span>
+                        <h1 class="display-4 fw-bolder my-3">Ta <span class="text-primary-blue">promesse de
+                                réussite</span> dans le digital.</h1>
+                        <p class="lead mb-4">Rejoins une nouvelle génération de talents. Skilloth te donne les
+                            compétences concrètes en développement web, marketing digital et design UI/UX pour
+                            transformer ta carrière.</p>
+                        <a href="#courses" class="btn btn-primary btn-lg me-2">Découvrir nos formations</a>
+                        <a href="#" class="btn btn-outline-dark btn-lg">Voir un cours démo</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./Capture_d_écran_2025-06-23_103323-removebg-preview.png"
+                            alt="Illustration d'une personne se formant en ligne" class="img-fluid anim-float">
+                        <!-- Note : J'utilise une illustration de stock qui correspond au style. Idéalement, ce serait une illustration personnalisée. -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== FEATURES SECTION ======== -->
+        <section id="features" class="py-5">
+            <div class="container text-center">
+                <h2 class="section-title">Bien plus qu'une simple formation en ligne.</h2>
+                <div class="row mt-5 g-4">
+                    <div class="col-md-4 feature-item fade-in">
+                        <div class="feature-icon bg-secondary-green-light"><i
+                                class="bi bi-journal-check text-secondary-green"></i></div>
+                        <h3 class="h5 mt-3">Pédagogie Structurée & Active</h3>
+                        <p>Nos parcours sont basés sur des mini-projets concrets et un projet final certifiant pour
+                            construire un portfolio solide dès le premier jour.</p>
+                    </div>
+                    <div class="col-md-4 feature-item fade-in" style="animation-delay: 0.2s;">
+                        <div class="feature-icon bg-primary-blue-light"><i class="bi bi-laptop text-primary-blue"></i>
+                        </div>
+                        <h3 class="h5 mt-3">Technologie & Flexibilité</h3>
+                        <p>Accède à notre plateforme moderne 24/7 et rejoins les sessions live pour approfondir tes
+                            connaissances sans contraintes.</p>
+                    </div>
+                    <div class="col-md-4 feature-item fade-in" style="animation-delay: 0.4s;">
+                        <div class="feature-icon bg-secondary-green-light"><i
+                                class="bi bi-people-fill text-secondary-green"></i></div>
+                        <h3 class="h5 mt-3">Engagement Humain Réel</h3>
+                        <p>Échange avec des mentors experts et tes camarades sur Discord, et profite d'un suivi
+                            personnalisé pour ne jamais être seul(e).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== COURSES SECTION ======== -->
+        <section id="courses" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Choisis le chemin qui te ressemble.</h2>
+                <div class="row g-4 justify-content-center">
+                    <!-- Course Card 1 -->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch fade-in">
+                        <div class="card course-card">
+                            <div class="card-body">
+                                <h4 class="course-title text-primary-blue">Développement Web</h4>
+                                <p class="card-text">Deviens développeur Full-Stack. Maîtrise HTML, CSS, JavaScript,
+                                    React et Node.js pour créer des applications web modernes et performantes.</p>
+                                <a href="#" class="stretched-link fw-bold">Voir le parcours <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Card 2 -->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch fade-in" style="animation-delay: 0.2s;">
+                        <div class="card course-card">
+                            <div class="card-body">
+                                <h4 class="course-title text-secondary-green">Marketing Digital</h4>
+                                <p class="card-text">Maîtrise les leviers d'acquisition. Du SEO au Social Media en
+                                    passant par la publicité, apprends à piloter des stratégies qui génèrent des
+                                    résultats.</p>
+                                <a href="#" class="stretched-link fw-bold">Voir le parcours <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Card 3 -->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch fade-in" style="animation-delay: 0.4s;">
+                        <div class="card course-card">
+                            <div class="card-body">
+                                <h4 class="course-title text-primary-blue">Design UI/UX</h4>
+                                <p class="card-text">Crée des expériences mémorables. Apprends à concevoir des
+                                    interfaces intuitives en maîtrisant la recherche utilisateur et le prototypage sur
+                                    Figma.</p>
+                                <a href="#" class="stretched-link fw-bold">Voir le parcours <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== TESTIMONIALS SECTION ======== -->
+        <section id="testimonials" class="py-5 bg-dark-charcoal text-white">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Ils ont transformé leur carrière avec nous.</h2>
+                <div class="row g-4">
+                    <div class="col-lg-6 fade-in">
+                        <div class="testimonial-card">
+                            <p class="testimonial-quote">"La formation en Design UI/UX m'a donné la confiance et le
+                                portfolio nécessaires pour décrocher mon premier CDI en moins de 3 mois.
+                                L'accompagnement des mentors est exceptionnel."</p>
+                            <div class="testimonial-author">
+                                <img src="https://i.pravatar.cc/60?img=1" alt="Avatar Léa D.">
+                                <div>
+                                    <strong>Léa D.</strong><br>
+                                    <small>Designer UI/UX, ex-étudiante en marketing.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 fade-in" style="animation-delay: 0.2s;">
+                        <div class="testimonial-card">
+                            <p class="testimonial-quote">"En pleine reconversion, le parcours Développeur Web de
+                                Skilloth était la solution parfaite. Intense, concret, et une super ambiance sur le
+                                Discord. Je recommande à 100%."</p>
+                            <div class="testimonial-author">
+                                <img src="https://i.pravatar.cc/60?img=32" alt="Avatar Marc L.">
+                                <div>
+                                    <strong>Marc L.</strong><br>
+                                    <small>Développeur Junior, ex-commercial.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== FINAL CTA SECTION ======== -->
+        <section class="py-5 text-center">
+            <div class="container">
+                <h2 class="display-5 fw-bold mb-3">Prêt(e) à forger tes compétences ?</h2>
+                <p class="lead mb-4 mx-auto" style="max-width: 600px;">Rejoins les centaines de talents qui façonnent
+                    déjà leur avenir digital. Ta nouvelle carrière commence ici et maintenant.</p>
+                <a href="#" class="btn btn-primary btn-lg">Je me lance !</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="bg-dark-charcoal text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="navbar-brand fs-4">Skill<span class="text-primary-blue">oth</span></h3>
+                    <p class="text-white-50 mt-2">Forme ton avenir digital avec Skilloth.</p>
+                    <div>
+                        <a href="#" class="text-white-50 me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white-50"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Skilloth</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">À propos</a></li>
+                        <li><a href="#" class="footer-link">Notre promesse</a></li>
+                        <li><a href="#" class="footer-link">Recrutement</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Formations</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Développement Web</a></li>
+                        <li><a href="#" class="footer-link">Marketing Digital</a></li>
+                        <li><a href="#" class="footer-link">Design UI/UX</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Ressources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Aide & FAQ</a></li>
+                        <li><a href="#" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="text-white-50 my-4">
+            <div class="text-center text-white-50">
+                <small>© 2024 Skilloth. Tous droits réservés. | <a href="#" class="footer-link">Mentions
+                        Légales</a></small>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
