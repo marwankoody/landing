@@ -199,3 +199,52 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .course-title {
         transform: translateY(0);
     }
 }
+
+
+
+.social{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.social ul{
+    margin: 0;
+    padding: 0;
+}
+.social ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+.social ul li a{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    color: #fff;
+    background: rgb(240, 86, 81);
+    display: block;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+}
+.social ul li a span{
+    position: absolute;
+    top:0;
+    left: -120;
+    width: 120px;
+    height: 50px;
+    color: #000;
+    background: #fff;
+    font-size: 15px;
+    z-index: -1;
+    opacity: 0;
+    backface-visibility: hidden;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.social ul li:hover span{
+    opacity: 1;
+    backface-visibility: visible;
+    left: 50px;
+}
