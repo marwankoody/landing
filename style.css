@@ -6,8 +6,8 @@
     --color-light-gray: #F9FAFB;
     --color-text: #374151; /* Slightly lighter than charcoal for body text */
 
-    --font-heading: 'Poppins', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Poppins', Arial, Helvetica, sans-serif;
+    --font-body: 'Inter', Arial, Helvetica, sans-serif;
     --transition: all 0.3s ease-in-out;
     --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
     --primary10: rgba(60, 114, 252, 0.1);
@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .course-title {
 
 #header.scrolled {
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background-color: rgba(231, 231, 231, 0.6);
 }
 
 .navbar-brand {
@@ -101,9 +102,14 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .course-title {
     color: var(--color-primary-blue);
 }
 
+#navbarNav{
+    padding: 1em 0;
+}
+
 @media (max-width: 991px) {
     #navbarNav{
         background-color: rgba(83, 82, 82, 0.863) !important;
+        padding: 1em;
     }
     .nav-link{
         color: white;
@@ -114,7 +120,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .course-title {
 
 /* ======== HERO SECTION ======== */
 .hero-section {
-    padding: 6rem 0;
+    padding: 4rem 0;
     overflow: hidden;
 }
 .slogan {
