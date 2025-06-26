@@ -39,11 +39,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Note: The actual animation is handled in CSS. 
-    // The CSS for .fade-in sets the initial state (opacity: 0).
-    // The JavaScript adds the .is-visible class when scrolled into view.
-    // However, for simplicity in this example, the CSS directly animates .fade-in
-    // on load. The observer logic is here as a best-practice example for more
-    // complex "on-scroll" animations. If you want JS to control it, you'd
-    // change the CSS to trigger on `.fade-in.is-visible`. I've kept the simpler CSS animation.
+
+    
+    
+});
+
+
+
+
+const serviceItems = document.querySelectorAll('.service__item');
+serviceItems.forEach(item => {
+    item.addEventListener('mouseenter', function () {
+        serviceItems.forEach(el => el.classList.remove('active'));
+        this.classList.add('active');
+    });
+
 });
