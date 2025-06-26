@@ -1,57 +1,46 @@
-document.addEventListener('DOMContentLoaded', function() {
-
-    // 1. Sticky Header on Scroll
+document.addEventListener('DOMContentLoaded', function () {
+    // Sticky Header on Scroll
     const header = document.getElementById('header');
     if (header) {
         const handleScroll = () => {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
+            header.classList.toggle('scrolled', window.scrollY > 50);
         };
         window.addEventListener('scroll', handleScroll);
-        // Initial check in case page is reloaded scrolled down
         handleScroll();
     }
 
-    // 2. Fade-in animation on scroll for elements with the .fade-in class
+    // Fade-in animation on scroll
     const fadeInElements = document.querySelectorAll('.fade-in');
-    
-    if (fadeInElements.length > 0) {
+    if (fadeInElements.length) {
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
-                // When the element is in view
                 if (entry.isIntersecting) {
-                    // Add a class to trigger the animation
                     entry.target.classList.add('is-visible');
-                    // Stop observing the element so the animation doesn't re-trigger
                     observer.unobserve(entry.target);
                 }
             });
-        }, {
-            threshold: 0.1 // Trigger when 10% of the element is visible
-        });
+        }, { threshold: 0.1 });
+        fadeInElements.forEach(element => observer.observe(element));
+    }
 
-        // Observe each .fade-in element
-        fadeInElements.forEach(element => {
-            observer.observe(element);
+    // Service item hover effect
+    const serviceItems = document.querySelectorAll('.service__item');
+    if (serviceItems.length) {
+        serviceItems.forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                serviceItems.forEach(el => el.classList.remove('active'));
+                this.classList.add('active');
+            });
         });
     }
 
-
-    
-    
-});
-
-
-
-
-const serviceItems = document.querySelectorAll('.service__item');
-serviceItems.forEach(item => {
-    item.addEventListener('mouseenter', function () {
-        serviceItems.forEach(el => el.classList.remove('active'));
-        this.classList.add('active');
-    });
-
+    // WhatsApp tooltip
+    const whatsappBtn = document.getElementById('whatsapp-chat-wrapper');
+    const tooltip = document.getElementById('whatsapp-tooltip');
+    if (whatsappBtn && tooltip) {
+        tooltip.classList.remove('hide');
+        const hideTooltip = () => tooltip.classList.add('hide');
+        setTimeout(hideTooltip, 4000);
+        whatsappBtn.addEventListener('click', hideTooltip);
+    }
 });
