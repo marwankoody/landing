@@ -20,7 +20,7 @@ body {
 h1, h2, h3, h4, h5, h6, .navbar-brand, .course-title {
     font-family: var(--font-heading);
     font-weight: 700;
-    color: var(--color-dark-charcoal);
+    
 }
 
 .section-title {
@@ -90,6 +90,16 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .course-title {
     color: var(--color-primary-blue);
 }
 
+@media (max-width: 991px) {
+    #navbarNav{
+        background-color: rgba(83, 82, 82, 0.863) !important;
+    }
+    .nav-link{
+        color: white;
+    }
+}
+
+
 
 /* ======== HERO SECTION ======== */
 .hero-section {
@@ -144,6 +154,101 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .course-title {
 }
 .course-card .stretched-link:hover {
     color: var(--color-primary-blue);
+}
+.amazing-card {
+    background: #fff;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.08);
+    border: none;
+    position: relative;
+}
+
+.amazing-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 16px 40px rgba(44,62,80,0.16);
+}
+
+.amazing-card-img {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background: #f5f7fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amazing-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.amazing-card:hover .amazing-card-img img {
+    transform: scale(1.07);
+}
+
+.amazing-card .card-body {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.amazing-card .course-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+
+.amazing-card .card-text {
+    flex: 1 1 auto;
+    color: #444;
+    margin-bottom: 1.2rem;
+}
+
+.amazing-card .stretched-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.amazing-card .stretched-link:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+.amazing-card-status {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 2;
+    padding: 0.3em .5em;
+    border-radius: 2em;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    color: #fff;
+    background: #888;
+    pointer-events: none;
+    user-select: none;
+}
+
+.amazing-status-available {
+    background: linear-gradient(100deg, #E26EE5 15%, #7E30E1 100%);
+}
+.amazing-status-progress {
+    background: linear-gradient(90deg, #73a6f8 15%, #2563EB 100%);
+}
+.amazing-status-soon {
+    background: linear-gradient(90deg, #09D1C7 15%, #15919B 100%);
 }
 
 /* ======== TESTIMONIALS SECTION ======== */
