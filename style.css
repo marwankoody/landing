@@ -581,7 +581,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .course-title {
     border-radius: 50%;
     transition: var(--transition);
     border-radius: 0px;
-    background: linear-gradient(180deg, #3c72fc -93.57%, #00060c 228.57%);
+    background: linear-gradient(180deg, #3c72fc -93.57%, #3B82F6 228.57%);
     margin: 0 auto;
   }
   .service-three__item {
